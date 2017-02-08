@@ -1,11 +1,10 @@
-// Labels
+// Badges
 
-@mixin label-variant($color) {
+@mixin badge-variant($color) {
   background-color: $color;
 
   &[href] {
-    &:hover,
-    &:focus {
+    @include hover-focus {
       background-color: darken($color, 10%);
     }
   }
